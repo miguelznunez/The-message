@@ -5,7 +5,7 @@ messageInput.addEventListener("keydown", function(event){
     getMessage();
 });
 
-function getMessage(){
+getMessage = () => {
   document.getElementById("message-output").innerHTML = messageInput.value;
   messageInput.value = "";
 }

@@ -4,28 +4,26 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="shortcut icon" type="image/png" href="message.png" />
   <link rel="stylesheet" href="style.css">
-  <title>The Message</title>
+  <title>Pass the message</title>
 </head>
 <body>
 
+  <main>
     <div class="container">
-      <div class="message">
-        <p>
-          <h3 style="text-align: center;font-weight: bold;">Pass the message</h3>
-          <p style="border-bottom: 2px solid rgba(211, 211, 211, 0.5);"></p>
-        </p>
-        <p>
-          <label for="message">Enter a message</label>
-          <br>
-          <button style="border-radius: 5px 0 0 5px;"><i class="far fa-envelope"></i></button><input type="text" id="message-input">
-        </p>
-        <p>
-          <button onclick="getMessage()">Submit</button>
-        </p>
+      <div id="message">
+        <h3 style="text-align: center;font-weight: bold;">Pass the message</h3>
+        <p style="border-bottom: 2px solid rgba(211, 211, 211, 0.5);"></p>
+        <label for="message">Enter a message</label>
+        <br><br>
+        <button style="border-radius: 5px 0 0 5px;"><i class="far fa-envelope"></i></button><input type="text" id="message-input">
+        <br><br>
+        <button id="submit">Submit</button>
         <p id="message-output" style="text-align: center;text-transform: uppercase;"></p>
-    </div>  
-
+      </div>
+  </main>
+  
   <script src="script.js"></script>
 </body>
 </html>
